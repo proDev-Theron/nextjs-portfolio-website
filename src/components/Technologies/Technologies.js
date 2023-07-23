@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiAws } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -19,8 +19,8 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experieced with <br />
-            Next.js, Bootstrap, Material UI, Styled-Components
+            Rockstar with <br />
+            Next.js, Bootstrap, Svelte, Tailwind
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,20 +31,20 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experienced with <br />
-            Python, PHP, and Databases
+            Rockstar with <br />
+            Node.js, Python, PHP, and Databases
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <DiAws size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>DevOps</ListTitle>
           <ListParagraph>
-            Experienced with <br />
-            Adobe XD, Figma
+            Rockstar with <br />
+            Azure DevOps, GitHub Actions, Terraform, Kubernetes, Git, Jira, Trello
           </ListParagraph>
         </ListContainer>
       </ListItem>
