@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'ThinToken',
     description:"Developed an RFID-based physical 2FA system called ThinToken. Our thesis evaluated ThinToken and Yubikey in terms of time-based efficiency, and usability. The researchers found that ThinToken outperformed Yubikey in all these aspects.",
-    image: '/images/Thintoken.png',
+    image: '/images/thintoken.png',
     tags: ['C++', 'JavaScript', 'RFID', 'ESP32'],
     source: 'https://github.com/orgs/Group4-ThinToken/repositories',
     visit: '/Thesis Thintoken IEEE.pdf',
