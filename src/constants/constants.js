@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'IdentiPlant',
-    description:"Trained and Deployed a YOLOv5 model to implement digital image processing in classifying plants by their leaves. The datasets are photos of leaves that belong to varied species of plants collected through manual image capturing.",
+    description:"Trained and Deployed a YOLOv5 model to implement digital image processing in identifying plants by their leaves. The datasets are photos of leaves that belong to varied species of plants collected through manual image capturing.",
     image: '/images/identiplant.png',
     tags: ['Python', 'JavaScript', 'YOLO', 'React.js'],
     source: 'https://github.com/proDev-Theron/dip-plantidentifier',
@@ -36,7 +36,7 @@ export const projects = [
     id: 3,
   },
   {
-    title: 'Medicall',
+    title: 'MediCall',
     description: "A Static Website for a Pharmacy. Primary Focus in doing this project is to learn more about Project Management, Source-Code Management and Developer Collaboration.",
       image: '/images/medicall-ls-1.png',
       tags: ['HTML', 'Bootstrap', 'JavaScript'],
@@ -99,7 +99,7 @@ export const certifications = [
     id: 3,
   },
   {
-    title: 'Alibaba Cloud Professional - Cloud Computing',
+    title: 'Alibaba Cloud Professional (ACP) - Cloud Computing',
     description: "ACP Cloud Computing Certification is designed for those familiar to cloud computing and with a rich operational knowledge of Alibaba Cloud products. This certification covers a spectrum of Alibaba Cloud core services, including architecture, networking, cloud security, and best practices.",
     image: '/images/2.png',
     details: 'https://edu.alibabacloud.com/certification/acp_cloudcomputing',
@@ -107,7 +107,7 @@ export const certifications = [
     id: 4,
   },
   {
-    title: 'Alibaba Cloud Associate Developer Certification',
+    title: 'Alibaba Cloud Associate (ACA) Developer',
     description: "Alibaba Developer Certification is designed for individuals who hold development positions and use Alibaba Cloud products to manage and maintain Alibaba Cloud-based applications.",
     image: '/images/1.png',
     details: 'https://edu.alibabacloud.com/certification/aca_developer',
