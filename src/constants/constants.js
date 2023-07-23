@@ -9,13 +9,31 @@ export const projects = [
     id: 0,
   },
   {
+    title: 'IdentiPlant',
+    description:"Trained and Deployed a YOLOv5 model to implement digital image processing in classifying plants by their leaves. The datasets are photos of leaves that belong to varied species of plants collected through manual image capturing.",
+    image: '/images/identiplant.png',
+    tags: ['Python', 'JavaScript', 'YOLO', 'React.js'],
+    source: 'https://github.com/proDev-Theron/dip-plantidentifier',
+    visit: 'https://prodev-theron.github.io/dip-plantidentifier/',
+    id: 1,
+  },
+  {
+    title: 'IoT Air Quality Monitoring System',
+    description:"Created an IoT-based air quality monitoring system that is not only cost-effective but also user-friendly. By utilizing the ESP32 microcontroller and the MQ135 air quality sensor, the system can detect a wide range of gases in the air and provide real-time data visualization to users via web.",
+    image: '/images/air-quality.png',
+    tags: ['Svelte', 'JavaScript', 'Firebase', 'IoT'],
+    source: '/Air-Quality-Monitoring-Manuscript.pdf',
+    visit: 'https://airquality-6d70f.web.app/air',
+    id: 2,
+  },
+  {
     title: 'iAssess',
     description: "The Online Self Assessment Web Application for TESDA's Computer Systems Servicing NCII",
       image: '/images/iassess.jpg',
       tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
     source: 'https://github.com/proDev-Theron/iASSESS',
     visit: 'https://prodev-theron.github.io/iASSESS/',
-    id: 1,
+    id: 3,
   },
   {
     title: 'Medicall',
@@ -24,7 +42,7 @@ export const projects = [
       tags: ['HTML', 'Bootstrap', 'JavaScript'],
     source: 'https://github.com/PLM-CPE0326-ELECTIVES-2022/CA-2-BLOCK-1-RC',
     visit: '/Medicall.pdf',
-    id: 2,
+    id: 4,
   },
   {
     title: 'IVSHS School Website and Learning Management System',
@@ -33,7 +51,7 @@ export const projects = [
     tags: ['WordPress', 'Elementor', 'PHP'],
     source: '',
     visit: 'http://www.ivshs.com/new-home',
-    id: 3,
+    id: 5,
   },
 ];
 
