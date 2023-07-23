@@ -99,7 +99,7 @@ export const certifications = [
     id: 3,
   },
   {
-    title: 'ACP Cloud Computing',
+    title: 'Alibaba Cloud Professional - Cloud Computing',
     description: "ACP Cloud Computing Certification is designed for those familiar to cloud computing and with a rich operational knowledge of Alibaba Cloud products. This certification covers a spectrum of Alibaba Cloud core services, including architecture, networking, cloud security, and best practices.",
     image: '/images/2.png',
     details: 'https://edu.alibabacloud.com/certification/acp_cloudcomputing',
@@ -107,7 +107,7 @@ export const certifications = [
     id: 4,
   },
   {
-    title: 'ACA Developer Certification',
+    title: 'Alibaba Cloud Associate Developer Certification',
     description: "Alibaba Developer Certification is designed for individuals who hold development positions and use Alibaba Cloud products to manage and maintain Alibaba Cloud-based applications.",
     image: '/images/1.png',
     details: 'https://edu.alibabacloud.com/certification/aca_developer',
