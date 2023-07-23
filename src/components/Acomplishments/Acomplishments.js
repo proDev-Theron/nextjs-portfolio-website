@@ -6,7 +6,7 @@ import { certifications } from '../../constants/constants';
 
 const Accomplishments = () => (
 <Section nopadding id="projects">
-    <SectionTitle main>Professional Certifications</SectionTitle>
+    <SectionTitle main>Recognitions</SectionTitle>
     <GridContainer>
       {certifications.map((p, i) => {
         return (

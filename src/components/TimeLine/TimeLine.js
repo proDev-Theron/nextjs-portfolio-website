@@ -46,9 +46,8 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I'm a Third-year BS Computer Engineering student at Pamantasan ng Lungsod ng Maynila. 
-      I help companies and individuals share their ideas and products online by developing websites 
-      and Cloud solutions they need.
+      I have worked on different phases of the software development lifecycle, from requirement analysis, developing, testing, implementing and training users, to monitoring KPIs. <br /> <br /> 
+      In 2021, I was privileged to be one of the first 10 Filipino scholars of the ULAP.org Cloud Career Kickstarter Scholarship Program, which has further equipped me with valuable knowledge and skills in cloud technologies.
       </SectionText>
       
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

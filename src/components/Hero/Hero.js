@@ -14,9 +14,9 @@ const Hero = (props) => (
           Theron Adrianne Bueno
         </SectionTitle>
         <SectionText>
-        My mission in life is to make the world a better place by pursuing my calling with passion and skills that comes with God's favor. 
+          I help companies and individuals share their ideas and products online by developing websites and other necessary cloud solutions they need.
         </SectionText>
-        <Link href="/[Résumé] Theron Adrianne Bueno - 3rd Year Computer Engineering Student, Full-Stack Developer, Multimedia Artist.pdf">
+        <Link href="/[Résumé] Theron Bueno - Software Engineer.pdf">
         <Button> Download Résumé </Button>
         </Link>
 
