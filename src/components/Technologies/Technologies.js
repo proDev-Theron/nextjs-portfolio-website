@@ -20,7 +20,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Rockstar with <br />
-            Next.js, Bootstrap, Svelte, Tailwind
+            Next.js, Vue.js, Nuxt 3, Bootstrap, Svelte
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -44,7 +44,7 @@ const Technologies = () =>  (
           <ListTitle>DevOps</ListTitle>
           <ListParagraph>
             Rockstar with <br />
-            Azure DevOps, GitHub Actions, Terraform, Kubernetes, Git, Jira, Trello
+            Azure DevOps, GitHub Actions, Terraform, Kubernetes, Git, Jira
           </ListParagraph>
         </ListContainer>
       </ListItem>
