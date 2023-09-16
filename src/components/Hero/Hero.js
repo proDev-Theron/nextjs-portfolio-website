@@ -16,7 +16,7 @@ const Hero = (props) => (
         <SectionText>
           I help companies and individuals share their ideas and products online by developing websites and other necessary cloud solutions they need.
         </SectionText>
-        <Link href="/[Résumé] Theron Bueno - Software Engineer.pdf">
+        <Link href="/[Résumé] Theron Adrianne Bueno - Software Engineer & Cloud Specialist.pdf">
         <Button> Download Résumé </Button>
         </Link>
 
