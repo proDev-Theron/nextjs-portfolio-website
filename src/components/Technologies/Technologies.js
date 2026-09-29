@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiAws } from 'react-icons/di';
+import { FaChartLine, FaCode, FaServer } from 'react-icons/fa';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,43 +8,39 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with with a wide-range of technologies.
-      Hardware, Software, Peopleware, and now, Cloud Technologies.
+      Tools across software engineering, infrastructure, and observability.
     </SectionText>
     <List>
       <ListItem>
         <picture>
-          <DiReact size="3rem" />
+          <FaCode size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Software</ListTitle>
           <ListParagraph>
-            Rockstar with <br />
-            Next.js, Vue.js, Nuxt 3, Bootstrap, Svelte
+            Python, Bash, Java, Node.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <FaServer size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Infrastructure</ListTitle>
           <ListParagraph>
-            Rockstar with <br />
-            Node.js, Python, PHP, and Databases
+            Linux, Docker, Kubernetes, AWS, Azure, GitLab CI/CD
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiAws size="3rem" />
+          <FaChartLine size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>DevOps</ListTitle>
+          <ListTitle>Observability</ListTitle>
           <ListParagraph>
-            Rockstar with <br />
-            Azure DevOps, GitHub Actions, Terraform, Kubernetes, Git, Jira
+            Dynatrace, Elastic Stack (ELK), Grafana
           </ListParagraph>
         </ListContainer>
       </ListItem>

@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { certifications } from '../../constants/constants';
 
 const Accomplishments = () => (
-<Section nopadding id="projects">
+<Section nopadding id="certifications">
     <SectionTitle main>Recognitions</SectionTitle>
     <GridContainer>
       {certifications.map((p, i) => {
@@ -13,7 +13,7 @@ const Accomplishments = () => (
           <BlogCard key={i}>
           <Img src={p.image} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree $title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>

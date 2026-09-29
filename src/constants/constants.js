@@ -62,7 +62,8 @@ export const TimeLineData = [
   { year: 2020, text: 'Worked with student-led organizations during the pandemic', },
   { year: 2021, text: 'Became one of the 10 Filipino Scholars of ULAP.org', },
   { year: 2022, text: 'Got cloud professional certifications from Microsoft, AWS, and Alibaba Cloud', },
-  { year: 2023, text: 'Finished College and now watches coding tutorials when not coding', },
+  { year: 2023, text: 'Finished college and joined ING Bank as a Software Engineer and Site Reliability Engineer', },
+  { year: 2025, text: 'Joined a digital bank as a Site Reliability Engineer', },
 ];
 
 export const certifications = [

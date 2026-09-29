@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from "next/link";
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
@@ -14,11 +12,8 @@ const Hero = (props) => (
           Theron Adrianne Bueno
         </SectionTitle>
         <SectionText>
-          I help companies and individuals share their ideas and products online by developing websites and other necessary cloud solutions they need.
+          Site Reliability Engineer for banking platforms, with a software engineering and SRE background at ING Bank. Focused on observability and dependable services.
         </SectionText>
-        <Link href="/[Résumé] Theron Adrianne Bueno - Software Engineer & Cloud Specialist.pdf">
-        <Button> Download Résumé </Button>
-        </Link>
 
       </LeftSection>
     </Section>
