@@ -42,6 +42,19 @@ export const experience = [
     tags: ['Java', 'Spring Boot', 'Vaadin', 'Node.js', 'Go', 'REST APIs'],
   },
   {
+    role: 'DevOps / Support Engineer (Contract)',
+    company: 'Legal tech SaaS company',
+    period: 'Contract',
+    summary: 'On-call support for an Azure-hosted SaaS platform used by law firms.',
+    highlights: [
+      'Resolved production incidents as the on-call engineer for Squadcast alerts.',
+      'Ran change requests during scheduled maintenance windows.',
+      'Deployed releases through Azure DevOps pipelines and managed user and system access.',
+      'Tracked cases and customer issues in Salesforce.',
+    ],
+    tags: ['Azure', 'Azure DevOps', 'Squadcast', 'Salesforce', 'Incident response', 'Change management'],
+  },
+  {
     role: 'Freelance Full-Stack Developer',
     company: 'Self-employed',
     period: 'Jan 2018 – Sep 2023',

@@ -1,13 +1,14 @@
 import React from 'react';
-import { FaChartLine, FaCloud, FaCode, FaCogs, FaRobot, FaSyncAlt } from 'react-icons/fa';
+import { FaBell, FaChartLine, FaCloud, FaCode, FaCogs, FaRobot, FaSyncAlt } from 'react-icons/fa';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const stack = [
   { icon: FaCloud, title: 'Cloud & Containers', tools: 'Linux (RHEL), AWS (EKS, EC2), Azure, Kubernetes, OpenShift, Karpenter, Istio, Docker' },
   { icon: FaCogs, title: 'Infrastructure as Code', tools: 'Terraform, Ansible' },
-  { icon: FaSyncAlt, title: 'CI/CD', tools: 'GitLab CI, GitHub Actions' },
+  { icon: FaSyncAlt, title: 'CI/CD', tools: 'GitLab CI, GitHub Actions, Azure DevOps' },
   { icon: FaChartLine, title: 'Observability', tools: 'Dynatrace, Elastic Stack (ELK), LGTM (Loki, Grafana, Tempo, Mimir)' },
+  { icon: FaBell, title: 'Incident Management', tools: 'Squadcast, Salesforce' },
   { icon: FaCode, title: 'Languages', tools: 'Python, Bash, Go, Java (Spring Boot), Node.js' },
   { icon: FaRobot, title: 'AI & AIOps', tools: 'AWS DevOps Agent, Claude, GitHub Copilot, Cursor' },
 ];
