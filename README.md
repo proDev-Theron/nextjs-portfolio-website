@@ -1,6 +1,6 @@
 # nextjs-portfolio-website
 
-Personal portfolio of Theron Bueno. Next.js (pages router) + styled-components, built as a static site.
+Personal portfolio of Theron Bueno. Next.js (pages router) with plain CSS, built as a static site. The previous design is tagged `v1.0`.
 
 ## Requirements
 
