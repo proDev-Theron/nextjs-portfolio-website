@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Theron Bueno · Site Reliability Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Theron Bueno, Site Reliability Engineer for fintech and regulated SaaS on AWS and Azure. Available for remote SRE contracts." />
+        <meta name="description" content="Theron Bueno, Site Reliability Engineer. Evidence-driven incident diagnosis, AWS, EKS, Terraform, and networking." />
       </Head>
       <Component {...pageProps} />
     </>

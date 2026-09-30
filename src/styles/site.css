@@ -68,23 +68,32 @@ h2 { font: 600 2rem/1.15 var(--display); letter-spacing: -0.015em; margin-bottom
 .models > div { border-top: 2px solid var(--ink); padding-top: 14px; }
 .models .meaning { color: var(--ink); font-style: italic; margin-bottom: 8px; }
 .res { display: block; margin-top: 10px; color: var(--accent); font-weight: 600; }
-#start .cta-row { margin-top: 24px; }
-.quote { max-width: 72ch; border-left: 3px solid var(--accent); padding-left: 20px; }
-.quote blockquote { font: 500 1.25rem/1.5 var(--display); }
+.quote { max-width: 72ch; border-left: 3px solid var(--accent); padding-left: 20px; margin-top: 40px; }
+.quote blockquote { font: 500 1.15rem/1.5 var(--display); }
 .quote figcaption { margin-top: 12px; color: var(--muted); font-size: 15px; }
 .quote figcaption b { color: var(--ink); }
-.incident td { font-size: 16px; }
-.incident td:first-child { font-family: var(--mono); font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+.eyebrow { font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 16px; }
+.case-list { display: grid; gap: 40px; }
+.case { border-top: 2px solid var(--ink); padding-top: 16px; }
+.case header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+.case h3 { margin: 0; font-size: 1.35rem; }
+.badge { font-size: 12px; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+.case dl > div { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.case dt { font: 600 13px var(--body); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.case dd { max-width: 72ch; }
+
+.bullets { margin: 8px 0; padding-left: 18px; }
+.bullets li { list-style: disc; margin-bottom: 6px; max-width: 72ch; }
+.bullets li::marker { color: var(--accent); }
+.feedback { display: grid; gap: 16px; max-width: 72ch; }
+.feedback li { border-bottom: 1px solid var(--rule); padding-bottom: 14px; }
+.note { margin-top: 12px; color: var(--muted); font-size: 15px; }
 
 .roles { display: grid; grid-template-columns: 180px 1fr; row-gap: 20px; column-gap: 32px; }
 .roles dt { font: 400 14px var(--mono); color: var(--muted); padding-top: 3px; }
 .roles dd b { font-family: var(--display); font-weight: 600; font-size: 19px; }
 .roles dd p { color: var(--muted); max-width: 64ch; }
-
-.how { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
-.how div { padding: 16px 0; border-bottom: 1px solid var(--rule); }
-.how b { display: block; font-weight: 600; }
-.how span { color: var(--muted); }
 
 .list li { padding: 10px 0; border-bottom: 1px solid var(--rule); }
 .two-col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px; }
@@ -98,11 +107,10 @@ h3 { font: 600 1.2rem var(--display); margin-bottom: 12px; }
 @media (max-width: 860px) {
   .nav { display: none; }
   .hero { grid-template-columns: 1fr; gap: 48px; padding: 56px 0; }
-  .cards, .how, .two-col { grid-template-columns: 1fr; gap: 20px; }
+  .cards, .two-col { grid-template-columns: 1fr; gap: 20px; }
   .roles { grid-template-columns: 1fr; row-gap: 4px; }
   .roles dd { margin-bottom: 16px; }
-  .incident thead { display: none; }
-  .incident tr { display: block; border-bottom: 1px solid var(--rule); padding: 12px 0; }
-  .incident td { display: block; border: 0; padding: 4px 0; }
+  .case dl > div { grid-template-columns: 1fr; gap: 2px; }
+  .ledger td.mono { font-size: 20px; }
   section { padding: 56px 0; }
 }
