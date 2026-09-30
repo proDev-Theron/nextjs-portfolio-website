@@ -65,6 +65,10 @@ h2 { font: 600 2rem/1.15 var(--display); letter-spacing: -0.015em; margin-bottom
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .cards b { display: block; font: 600 19px var(--display); margin-bottom: 4px; }
 .cards p { color: var(--muted); }
+.models > div { border-top: 2px solid var(--ink); padding-top: 14px; }
+.models .meaning { color: var(--ink); font-style: italic; margin-bottom: 8px; }
+.res { display: block; margin-top: 10px; color: var(--accent); font-weight: 600; }
+#start .cta-row { margin-top: 24px; }
 .incident td { font-size: 16px; }
 .incident td:first-child { font-family: var(--mono); font-size: 13px; color: var(--muted); white-space: nowrap; }
 

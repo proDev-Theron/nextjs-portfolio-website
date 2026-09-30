@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Logo from '../components/Logo';
 import {
-  cases, certifications, howIWork, links, results, roles, stack, tools, wins,
+  cases, certifications, howIWork, links, models, results, reviewSteps, roles, stack, tools, wins,
 } from '../data/content';
 
 export default function Home() {
@@ -24,10 +24,10 @@ export default function Home() {
             Theron Bueno
           </a>
           <nav className="nav" aria-label="Sections">
+            <a href="#models">How I think</a>
             <a href="#results">Results</a>
             <a href="#experience">Experience</a>
-            <a href="#how">How I work</a>
-            <a href="#stack">Tools</a>
+            <a href="#start">Start here</a>
           </nav>
           <button type="button" className="toggle" onClick={toggleTheme} aria-label="Toggle light and dark mode">
             {theme === 'dark' ? 'light' : 'dark'}
@@ -40,8 +40,8 @@ export default function Home() {
           <div>
             <h1>I keep production apps running, so customers never notice when something breaks.</h1>
             <p className="lede">
-              Site Reliability Engineer for banks and SaaS platforms, including a digital bank and ING.
-              I prevent outages, fix them fast when they happen, and make changes safe.
+              Site Reliability Engineer for fintech and regulated SaaS on AWS and Azure, with banking experience at a
+              digital bank and ING. I prevent outages, fix them fast, and make every change safe and auditable.
             </p>
             <p className="terms mono">
               <span className="dot" aria-hidden="true" />
@@ -75,6 +75,34 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="tools">
+          <h2>Tools I built</h2>
+          <p className="sub">AI-assisted operations tools, built so they can&apos;t do damage without a human saying yes.</p>
+          <div className="cards">
+            {tools.map((t) => (
+              <div key={t.title}><b>{t.title}</b><p>{t.text}</p><span className="tech">{t.tech}</span></div>
+            ))}
+          </div>
+        </section>
+
+        <section id="models">
+          <h2>How I think</h2>
+          <p className="sub">
+            I use mental models, the latticework Charlie Munger describes, as everyday working tools. Here&apos;s where
+            each one paid off in production.
+          </p>
+          <div className="cards models">
+            {models.map((m) => (
+              <div key={m.name}>
+                <b>{m.name}</b>
+                <p className="meaning">{m.meaning}</p>
+                <p>{m.applied}</p>
+                <span className="res">{m.result}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section id="results">
           <h2>Problems I&apos;ve solved</h2>
           <p className="sub">Each one in plain English, with the technical details underneath for engineers.</p>
@@ -96,13 +124,16 @@ export default function Home() {
           </table>
         </section>
 
-        <section id="tools">
-          <h2>Tools I built</h2>
-          <p className="sub">AI-assisted operations tools, built so they can&apos;t do damage without a human saying yes.</p>
-          <div className="cards">
-            {tools.map((t) => (
-              <div key={t.title}><b>{t.title}</b><p>{t.text}</p><span className="tech">{t.tech}</span></div>
+        <section id="start">
+          <h2>Start here: a 2-week reliability review</h2>
+          <p className="sub">A small, fixed-scope first step, so you can judge my work before committing to a monthly contract.</p>
+          <div className="how">
+            {reviewSteps.map((s) => (
+              <div key={s.title}><b>{s.title}</b><span>{s.text}</span></div>
             ))}
+          </div>
+          <div className="cta-row">
+            <a className="btn btn-primary" href={links.review}>Ask about a reliability review</a>
           </div>
         </section>
 
