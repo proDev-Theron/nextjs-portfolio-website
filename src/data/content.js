@@ -139,6 +139,11 @@ export const tooling = [
     text: 'Works cases and change requests from a link. Every write needs explicit human approval, enforced by tool permissions rather than instructions.',
     tech: 'Salesforce',
   },
+  {
+    title: 'Production probe with AI triage',
+    text: 'Checks a live app every 3 hours and after each deploy. When a check fails, Claude writes a likely cause from the failures, recent deploys, and commits. It advises; it never rolls back or changes anything.',
+    tech: 'GitHub Actions, Claude API, Vercel',
+  },
 ];
 
 export const feedback = [
