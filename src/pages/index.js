@@ -29,8 +29,8 @@ export default function Home() {
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
           </nav>
-          <button type="button" className="toggle" onClick={toggleTheme} aria-label="Toggle light and dark mode">
-            {theme === 'dark' ? 'light' : 'dark'}
+          <button type="button" className="toggle" onClick={toggleTheme} aria-pressed={theme === 'dark'}>
+            Dark mode
           </button>
         </div>
       </header>
@@ -38,7 +38,6 @@ export default function Home() {
       <main id="main" className="wrap">
         <div className="hero">
           <div>
-            <p className="eyebrow mono">Site Reliability Engineer · Platform</p>
             <h1>I find the actual failure mechanism, then change the system so it&apos;s less likely to recur.</h1>
             <p className="lede">
               SRE at a digital bank, working across AWS, EKS, Terraform, and networking. Software engineering background,
@@ -98,22 +97,24 @@ export default function Home() {
             I use mental models, Charlie Munger&apos;s latticework, as everyday tools. Each one below changed a real
             decision.
           </p>
-          <div className="cards models">
+          <ol className="principles">
             {principles.map((p) => (
-              <div key={p.name}>
-                <b>{p.name}</b>
-                <p className="meaning mono">{p.model}</p>
+              <li key={p.name}>
+                <div>
+                  <b>{p.name}</b>
+                  <span className="tech">{p.model}</span>
+                </div>
                 <p>{p.applied}</p>
                 <span className="res">{p.result}</span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </section>
 
         <section id="tooling">
           <h2>Tooling with guardrails</h2>
           <p className="sub">Built to shorten diagnosis without giving automation the power to do damage.</p>
-          <div className="cards">
+          <div className="cards cards-2">
             {tooling.map((t) => (
               <div key={t.title}><b>{t.title}</b><p>{t.text}</p><span className="tech">{t.tech}</span></div>
             ))}
@@ -138,7 +139,7 @@ export default function Home() {
           <h2>Experience</h2>
           <dl className="roles">
             {roles.map((r) => (
-              <div key={r.title} style={{ display: 'contents' }}>
+              <div key={r.title} className="role-row">
                 <dt>{r.period}</dt>
                 <dd>
                   <b>{r.title}</b>

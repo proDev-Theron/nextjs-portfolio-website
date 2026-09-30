@@ -19,5 +19,6 @@ npm start       # serve ./out locally
 
 - All page copy (results, cases, experience, tools, certifications): `src/data/content.js`
 - Layout: `src/pages/index.js`
-- Colors, type, and spacing: `src/styles/site.css`
+- Colors, type, and spacing: `src/styles/site.css` (rules and rationale in `DESIGN.md`)
+- Security headers and CSP: `vercel.json` (no inline scripts or styles)
 - Images and PDFs: `public/`
