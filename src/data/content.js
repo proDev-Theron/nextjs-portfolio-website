@@ -51,6 +51,14 @@ export const models = [
   },
 ];
 
+export const testimonials = [
+  {
+    quote: 'I’m incredibly grateful to my mentor, Theron Bueno, for an insightful and inspiring six-month mentorship. Thank you for generously sharing your knowledge, not just on technical topics but also on essential soft skills like tailoring resumes, interview preparation, and confidence during an interview.',
+    name: 'Christian Ortiz',
+    role: 'Full-Stack Software Developer, mentored through ULAP.org',
+  },
+];
+
 export const reviewSteps = [
   { title: 'Week 1', text: 'Access, an architecture walkthrough, and a close look at your alerts, incidents, and change process.' },
   { title: 'Week 2', text: 'A written report ranking your top reliability risks by business impact, plus fixes for the quick wins.' },

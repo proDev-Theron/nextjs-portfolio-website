@@ -69,6 +69,10 @@ h2 { font: 600 2rem/1.15 var(--display); letter-spacing: -0.015em; margin-bottom
 .models .meaning { color: var(--ink); font-style: italic; margin-bottom: 8px; }
 .res { display: block; margin-top: 10px; color: var(--accent); font-weight: 600; }
 #start .cta-row { margin-top: 24px; }
+.quote { max-width: 72ch; border-left: 3px solid var(--accent); padding-left: 20px; }
+.quote blockquote { font: 500 1.25rem/1.5 var(--display); }
+.quote figcaption { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.quote figcaption b { color: var(--ink); }
 .incident td { font-size: 16px; }
 .incident td:first-child { font-family: var(--mono); font-size: 13px; color: var(--muted); white-space: nowrap; }
 

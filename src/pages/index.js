@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Logo from '../components/Logo';
 import {
-  cases, certifications, howIWork, links, models, results, reviewSteps, roles, stack, tools, wins,
+  cases, certifications, howIWork, links, models, results, reviewSteps, roles, stack, testimonials, tools, wins,
 } from '../data/content';
 
 export default function Home() {
@@ -122,6 +122,19 @@ export default function Home() {
               ))}
             </tbody>
           </table>
+        </section>
+
+        <section id="people">
+          <h2>What people say</h2>
+          <p className="sub">
+            I started as one of ten ULAP.org cloud scholars in the Philippines. Today I mentor the next cohort.
+          </p>
+          {testimonials.map((t) => (
+            <figure key={t.name} className="quote">
+              <blockquote>“{t.quote}”</blockquote>
+              <figcaption><b>{t.name}</b> · {t.role}</figcaption>
+            </figure>
+          ))}
         </section>
 
         <section id="start">
