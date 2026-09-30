@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillBehanceCircle, AiFillLinkedin } from 'react-icons/ai';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+import Logo from '../Logo/Logo';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <Div1>
-      <Link href="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-        <FaChevronLeft size="3rem" /> <FaChevronRight size="3rem" /> <span>Theron</span>
+      <Link href="/" aria-label="Theron Bueno, home" style={{ display: 'flex', alignItems: 'center' }}>
+        <Logo />
       </Link>
     </Div1>
     <Div2>

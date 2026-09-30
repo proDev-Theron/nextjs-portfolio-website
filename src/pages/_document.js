@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en-US'>
         <Head>
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
         </Head>
         <body>
