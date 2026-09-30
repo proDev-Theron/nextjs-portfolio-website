@@ -1,7 +1,7 @@
 export const experience = [
   {
     role: 'Site Reliability Engineer',
-    company: 'a digital bank',
+    company: 'A digital bank',
     period: 'Dec 2025 – Present',
     summary: 'Production banking services on AWS and Kubernetes, with Dynatrace observability and AI-assisted operations.',
     highlights: [
