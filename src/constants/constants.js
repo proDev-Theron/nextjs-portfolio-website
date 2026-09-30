@@ -1,3 +1,56 @@
+export const experience = [
+  {
+    role: 'Site Reliability Engineer',
+    company: 'a digital bank',
+    period: 'Dec 2025 – Present',
+    summary: 'Production banking services on AWS and Kubernetes, with Dynatrace observability and AI-assisted operations.',
+    highlights: [
+      'Recovered 130,000+ stuck transactional emails in 90 minutes with none lost during an SMTP outage by tuning Postfix concurrency and worker allocation and working through the queue in targeted batches.',
+      'Eliminated intermittent 504s at the production ingress by tracing an ALB/Istio idle timeout mismatch and shipping a mesh-wide proxy fix through Terraform with zero downtime.',
+      'Upgraded EKS with zero downtime through an automated two-phase rollout using Terraform and Karpenter disruption budgets.',
+      'Expanded Dynatrace coverage and proactive alerting on critical banking services so incidents are caught earlier.',
+      'Sped up automation and troubleshooting with AI agents such as AWS DevOps Agent, alongside Claude, GitHub Copilot, and Cursor.',
+    ],
+    tags: ['AWS', 'EKS', 'Kubernetes', 'Karpenter', 'Istio', 'Terraform', 'Dynatrace', 'AWS DevOps Agent', 'Postfix', 'GitLab CI'],
+  },
+  {
+    role: 'Site Reliability Engineer',
+    company: 'ING Hubs Philippines',
+    period: 'Dec 2024 – Dec 2025',
+    summary: 'Azure, RHEL, and OpenShift platforms with the ELK and LGTM observability stacks.',
+    highlights: [
+      'Made Elastic Stack upgrades safe across 100+ production and non-production nodes with Ansible tasks that check cluster health before applying changes.',
+      'Stabilized Elasticsearch during disaster recovery exercises by reordering shard allocation and node shutdown in Ansible playbooks.',
+      'Led execution of the disaster recovery plan to keep services within SLA during outages.',
+      'Remediated flagged vulnerabilities across 100+ RHEL VMs through timely patching.',
+      'Cut alert response time with automated pipelines that route critical incidents to Microsoft Teams.',
+      'Grew from newest team member to covering most of the team\'s work, including DR, capacity management, migrations, and upgrades.',
+    ],
+    tags: ['Azure', 'RHEL', 'OpenShift', 'Elastic Stack', 'Loki', 'Grafana', 'Tempo', 'Mimir', 'Ansible'],
+  },
+  {
+    role: 'Backend Engineer',
+    company: 'ING Hubs Philippines',
+    period: 'Dec 2023 – Dec 2024',
+    summary: 'Internal platform tooling and service ownership.',
+    highlights: [
+      'Built features and fixed bugs in an internal onboarding automation tool that provisions ELK Stack access through REST APIs.',
+      'Took ownership of a critical authentication service after its original maintainer left.',
+      'Resolved all high-severity code-scan findings in three Go services.',
+      'Ran the team\'s scrum ceremonies and wrote handover documentation for every solution shipped.',
+    ],
+    tags: ['Java', 'Spring Boot', 'Vaadin', 'Node.js', 'Go', 'REST APIs'],
+  },
+  {
+    role: 'Freelance Full-Stack Developer',
+    company: 'Self-employed',
+    period: 'Jan 2018 – Sep 2023',
+    summary: 'Built, deployed, and maintained web apps for 30+ local and international clients.',
+    highlights: [],
+    tags: ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'Tailwind CSS'],
+  },
+];
+
 export const projects = [
   {
     title: 'ThinToken',
@@ -62,11 +115,18 @@ export const TimeLineData = [
   { year: 2020, text: 'Worked with student-led organizations during the pandemic', },
   { year: 2021, text: 'Became one of the 10 Filipino Scholars of ULAP.org', },
   { year: 2022, text: 'Got cloud professional certifications from Microsoft, AWS, and Alibaba Cloud', },
-  { year: 2023, text: 'Finished college and joined ING Bank as a Software Engineer and Site Reliability Engineer', },
+  { year: 2023, text: 'Graduated BS Computer Engineering and joined ING Hubs Philippines as a Backend Engineer', },
+  { year: 2024, text: 'Moved into Site Reliability Engineering at ING and started mentoring with ULAP.org', },
   { year: 2025, text: 'Joined a digital bank as a Site Reliability Engineer', },
 ];
 
 export const certifications = [
+  {
+    title: 'Microsoft Certified: Azure Developer Associate (AZ-204)',
+    description: "Validated skills in designing, building, testing, and maintaining cloud applications and services on Microsoft Azure.",
+    details: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/',
+    id: 6,
+  },
   {
     title: 'AWS Certified Cloud Practitioner',
     description: "Demonstrated cloud fluency and understanding of essential IT services and their uses on AWS Cloud. Thoroughly prepared for the certification by training with AWS User Group Manila and graduating from AWS Academy.",

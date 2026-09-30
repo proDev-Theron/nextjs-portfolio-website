@@ -46,7 +46,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I work in site reliability engineering, with a background in software engineering and an interest in observability and production reliability. I was a ULAP.org Cloud Career Kickstarter scholar in 2021.
+        Site Reliability Engineer with a backend engineering background, focused on keeping banking platforms reliable and observable. I mentor early-career engineers through ULAP.org, where I was a Cloud Career Kickstarter scholar in 2021.
       </SectionText>
       
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

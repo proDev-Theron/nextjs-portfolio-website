@@ -1,49 +1,36 @@
 import React from 'react';
-import { FaChartLine, FaCode, FaServer } from 'react-icons/fa';
+import { FaChartLine, FaCloud, FaCode, FaCogs, FaRobot, FaSyncAlt } from 'react-icons/fa';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+
+const stack = [
+  { icon: FaCloud, title: 'Cloud & Containers', tools: 'Linux (RHEL), AWS (EKS, EC2), Azure, Kubernetes, OpenShift, Karpenter, Istio, Docker' },
+  { icon: FaCogs, title: 'Infrastructure as Code', tools: 'Terraform, Ansible' },
+  { icon: FaSyncAlt, title: 'CI/CD', tools: 'GitLab CI, GitHub Actions' },
+  { icon: FaChartLine, title: 'Observability', tools: 'Dynatrace, Elastic Stack (ELK), LGTM (Loki, Grafana, Tempo, Mimir)' },
+  { icon: FaCode, title: 'Languages', tools: 'Python, Bash, Go, Java (Spring Boot), Node.js' },
+  { icon: FaRobot, title: 'AI & AIOps', tools: 'AWS DevOps Agent, Claude, GitHub Copilot, Cursor' },
+];
 
 const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Tools across software engineering, infrastructure, and observability.
+      What I use to run and observe production systems.
     </SectionText>
     <List>
-      <ListItem>
-        <picture>
-          <FaCode size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Software</ListTitle>
-          <ListParagraph>
-            Python, Bash, Java, Node.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <FaServer size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Infrastructure</ListTitle>
-          <ListParagraph>
-            Linux, Docker, Kubernetes, AWS, Azure, GitLab CI/CD
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <FaChartLine size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Observability</ListTitle>
-          <ListParagraph>
-            Dynatrace, Elastic Stack (ELK), Grafana
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
+      {stack.map(({ icon: Icon, title, tools }) => (
+        <ListItem key={title}>
+          <picture>
+            <Icon size="3rem" />
+          </picture>
+          <ListContainer>
+            <ListTitle>{title}</ListTitle>
+            <ListParagraph>{tools}</ListParagraph>
+          </ListContainer>
+        </ListItem>
+      ))}
     </List>
     <SectionDivider colorAlt />
   </Section>

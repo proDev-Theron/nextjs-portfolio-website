@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { LeftSection } from './HeroStyles';
+import { Cta, CtaRow, Kicker, LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <>
@@ -11,10 +11,15 @@ const Hero = (props) => (
           Hi there! I'm, <br />
           Theron Adrianne Bueno
         </SectionTitle>
+        <Kicker>Site Reliability Engineer · Kubernetes · AWS · Azure · Observability</Kicker>
         <SectionText>
-          Site Reliability Engineer for banking platforms, with a software engineering and SRE background at ING Bank. Focused on observability and dependable services.
+          SRE at a digital bank, running production banking services on AWS and Kubernetes. Previously SRE and backend engineer at ING.
         </SectionText>
-
+        <CtaRow>
+          <Cta $primary href="#experience">View experience</Cta>
+          <Cta href="https://www.linkedin.com/in/prodev-theron/">LinkedIn</Cta>
+          <Cta href="mailto:prodev.theron@gmail.com">Email me</Cta>
+        </CtaRow>
       </LeftSection>
     </Section>
   </>

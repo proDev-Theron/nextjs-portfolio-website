@@ -11,7 +11,7 @@ const Accomplishments = () => (
       {certifications.map((p, i) => {
         return (
           <BlogCard key={i}>
-          <Img src={p.image} />
+          {p.image && <Img src={p.image} />}
             <TitleContent>
               <HeaderThree $title>{p.title}</HeaderThree>
               <Hr />
@@ -20,7 +20,7 @@ const Accomplishments = () => (
 
             <UtilityList>
               <ExternalLinks href={p.details}>Details</ExternalLinks>
-              <ExternalLinks href={p.verify}>Verify</ExternalLinks>
+              {p.verify && <ExternalLinks href={p.verify}>Verify</ExternalLinks>}
             </UtilityList>
           </BlogCard>
         );
