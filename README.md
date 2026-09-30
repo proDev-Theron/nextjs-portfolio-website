@@ -17,6 +17,7 @@ npm start       # serve ./out locally
 
 ## Editing content
 
-- Projects, timeline, and certifications: `src/constants/constants.js`
-- Hero, technologies, and about copy: `src/components/`
+- All page copy (results, cases, experience, tools, certifications): `src/data/content.js`
+- Layout: `src/pages/index.js`
+- Colors, type, and spacing: `src/styles/site.css`
 - Images and PDFs: `public/`
